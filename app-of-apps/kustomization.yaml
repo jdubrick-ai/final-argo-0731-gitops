@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: final-argo-0731 
+  janus-idp.io/tekton: final-argo-0731
+  backstage.io/kubernetes-id: final-argo-0731
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: final-argo-0731
+resources: 
+- application-dev.yaml
